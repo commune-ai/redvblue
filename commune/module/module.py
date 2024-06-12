@@ -661,9 +661,9 @@ class c:
 
     @classmethod
     def start_app(cls,
-           module:str = 'module', 
+           module:str = 'redvblue', 
            fn='app', 
-           port=8501, 
+           port=None, 
            public:bool = False, 
            remote:bool = False):
         if c.module_exists(module + '.app'):

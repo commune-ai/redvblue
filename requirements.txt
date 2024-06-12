@@ -1,4 +1,4 @@
-###### Flexible Requirements without Version specifications ######
+###### FUNKY FLEXIBLE CHAD REQUIREMENTS######
 # Why? Because we want to be able to update the packages without having to update the requirements file
 
 # GENERAL
@@ -14,18 +14,16 @@ aiohttp
 # SERVER
 fastapi
 sse-starlette # server sent events for streaming back to client
-grpcio
-grpcio-tools
-
-# PLOT
-plotly # dope interactive plots
-streamlit # for web apps
-gradio # for web apps too
 
 # ML
 torch
 msgpack_numpy
 
 # BLOCKCHAIN
-substrate-interface
-# web3
+substrate-interface # for the key 
+
+# PLOT
+plotly # dope interactive plots
+streamlit # dope for web apps
+gradio # for web apps in gradio
+

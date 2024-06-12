@@ -2,7 +2,6 @@
 
 
 
-COMMUNE=commune
 SUBSPACE=subspace
 SUBTENSOR=0.0.0.0:9944
 
@@ -24,5 +23,5 @@ restart:
 	make down && make up
 	
 enter:
-	docker exec -it commune bash
+	docker exec -it redvblue bash
 

@@ -19,4 +19,5 @@ RUN apt-get install -y nodejs npm
 RUN npm install -g pm2
 COPY . /app
 RUN pip install -e ./
+ENV PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 ENTRYPOINT [ "tail", "-f", "/dev/null"]

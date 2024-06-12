@@ -4,18 +4,17 @@ import json
 
 
 class App(c.Module):
+    port_range = [8501, 8600]
 
     def start(self,
            module:str = 'app', 
            fn='app', 
-           port=8501, 
+           port=None, 
            public:bool = False, 
            remote:bool = False, 
            kwargs=None):
         kwargs = kwargs or {}
-        if public:
-            port = c.free_port()
-
+        port = port or c.free_port()
         while c.port_used(port):
             c.print(f'Port {port} is already in use', color='red')
             port = port + 1
