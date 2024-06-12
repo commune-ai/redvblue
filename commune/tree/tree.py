@@ -41,7 +41,6 @@ class Tree(c.Module):
             if not is_module_in_tree:
                 c.print(f'Path not found in tree: {simple_path}', color='red')
                 tree = cls.tree(update=True, include_root=True)
-                tree.update(root_tree)
             full_path = tree[simple_path]
 
         return full_path
@@ -298,7 +297,6 @@ class Tree(c.Module):
         except Exception as e:
             object_path = simple_path
 
-        c.print( simple_path, 'fam')
 
         return object_path
     

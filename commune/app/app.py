@@ -10,9 +10,9 @@ class App(c.Module):
            module:str = 'app', 
            fn='app', 
            port=None, 
-           public:bool = False, 
-           remote:bool = False, 
-           kwargs=None):
+           remote:bool = True, 
+           kwargs=None, 
+           **extra_kwargs):
         kwargs = kwargs or {}
         port = port or c.free_port()
         while c.port_used(port):
@@ -20,11 +20,10 @@ class App(c.Module):
             port = port + 1
         if remote:
             remote_kwargs = c.locals2kwargs(locals())
+            remote_kwargs.pop('extra_kwargs')
             remote_kwargs['remote'] = False
-            c.remote_fn(module=module, fn='st', kwargs=remote_kwargs)
-            ip = c.ip()
-            url = f'http://{ip}:{port}'
-
+            c.remote_fn(module=module, fn='start_app', name=module+"::app", kwargs=remote_kwargs)
+            url = f'http://0.0.0.0:{port}'
             return {'success': True, 
                     'msg': f'running {module} on {port}', 
                     'url': url}

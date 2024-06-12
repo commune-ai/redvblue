@@ -27,3 +27,6 @@ plotly # dope interactive plots
 streamlit # dope for web apps
 gradio # for web apps in gradio
 
+# TEST 
+pytest
+

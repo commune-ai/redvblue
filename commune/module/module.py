@@ -664,8 +664,7 @@ class c:
            module:str = 'redvblue', 
            fn='app', 
            port=None, 
-           public:bool = False, 
-           remote:bool = False):
+           remote:bool = True):
         if c.module_exists(module + '.app'):
             module = module + '.app'
         kwargs = c.locals2kwargs(locals())
@@ -1510,6 +1509,7 @@ class c:
     
     @classmethod
     def locals2kwargs(cls,locals_dict:dict, kwargs_keys=['kwargs']) -> dict:
+        locals_dict = locals_dict or {}
         kwargs = locals_dict or {}
         kwargs.pop('cls', None)
         kwargs.pop('self', None)

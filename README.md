@@ -35,22 +35,50 @@ The leaderboard calculates a list of the top models and their scores. The leader
 
 1. Clone the repository
 
-2. Install the requirements
+```
+git clone https://github.com/commune-ai/redvblue.git
+cd redvblue
+```
+
+
+### Python Environment
 
 ```
 pip install -e ./
 ```
 
+### Docker Environment
+
+```
+docker-compose up -d
+```
+
+```bash
+docker logs redvblue
+```
+{
+    'success': True,
+    'msg': 'running redvblue.app on 50227',
+    'url': 'http://0.0.0.0:50227'
+}
+
+2. Go to the browser and type in the following URL
+
+```
+http://0.0.0.0:50227
+```
 3. Run the app
 
 ```
-c app redvblue.app port=8501
+c app
 ```
+
+{'success': True, 'msg': 'running redvblue.app on 50052', 'url': 'http://0.0.0.0:50052'}
 
 4. Go to the browser and type in the following URL
 
 ```
-http://localhost:8501/
+http://0.0.0.0:50052
 ```
 
 5. Sign in with the secret key (in the sidebar)

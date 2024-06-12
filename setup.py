@@ -13,7 +13,7 @@ with open(f'{here}/requirements.txt') as requirements_file:
     install_requires = [str(requirement) for requirement in parse_requirements(requirements_file)]
 
 setup(
-    name='redvblue',
+    name='commune',
     version='4.20.69',
     description='redvblue',
     long_description=long_description,
@@ -27,7 +27,7 @@ setup(
     install_requires=install_requires,
     entry_points={
         'console_scripts': [
-            'rvb=redvblue.commune.cli:main',
+            'c=commune.cli:main',
         ],
     },
     classifiers=[

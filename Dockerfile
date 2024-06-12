@@ -19,4 +19,4 @@ RUN apt-get install -y nodejs npm
 RUN npm install -g pm2
 COPY . /app
 RUN pip install -e ./
-ENTRYPOINT [ "tail", "-f", "/dev/null"]
+RUN chmod +x ./start.sh

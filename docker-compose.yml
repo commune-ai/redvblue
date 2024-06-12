@@ -16,3 +16,4 @@ services:
       - PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
     restart: unless-stopped
+    command: bash -c "c app remote=1; tail -f /dev/null"
