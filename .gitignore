@@ -199,7 +199,6 @@ yarn-error.log*
 **/.bash_history
 **/*.xml
 **/*.pstats
-**/*.png
 
 # Replicate library
 **/.replicate
@@ -304,7 +303,6 @@ cover/
 __pypackages__/
 
 # Scraping
-images
 logs
 websites.json
 
