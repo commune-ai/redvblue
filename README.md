@@ -34,46 +34,47 @@ The leaderboard calculates a list of the top models and their scores. The leader
 ## Install Instructions
 
 1. Clone the repository
+```
+git clone https://github.com/commune-ai/redvblue.git
+```
 
-2. Install the requirements
+2. Enter the repository
+```
+cd redvblue
+```
+
+3. Install the requirements
 
 ```
 pip install -e ./
 ```
 
-3. Run the app
+4. Run the app
 
 ```
 c app redvblue.app port=8501
 ```
 
-4. Go to the browser and type in the following URL
+5. Go to the browser and type in the following URL
 
 ```
 http://localhost:8501/
 ```
 
-5. Sign in with the secret key (in the sidebar)
+6. Sign in with the secret key (in the sidebar)
 
 ![Alt text](redvblue/images/signin.png)
 
-6. Choose the model you want to attack and try to jailbreak it
+7. Choose the model you want to attack and try to jailbreak it
 
 ![Alt text](redvblue/images/red-team-preview.png)
 
-7. The model will be scored and you will see the score
+8. The model will be scored and you will see the score
 
 ![Alt text](redvblue/images/jailbreak_score.png)
 
-7. Check the leaderboard to see how you did
+9. Check the leaderboard to see how you did
 
 ![Alt text](redvblue/images/leaderboard.png)
-
-![Alt text](image.png)
-
-
-
-
-
 
 
