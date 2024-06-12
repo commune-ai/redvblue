@@ -1,5 +1,7 @@
 
 # REDVBLUE FOR COMPETITIVE JAILBREAKING
+![Alt text](redvblue/images/blue_basi.png)
+![Alt text](redvblue/images/red_basi.png)
 ![Alt text](redvblue/images/red-team-preview.png)
 ## VERSION 0.1
 
